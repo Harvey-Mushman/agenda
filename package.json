@@ -1,18 +1,41 @@
 {
   "name": "agenda",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@tiptap/extension-highlight": "^2.0.0-beta.20",
+    "@tiptap/extension-placeholder": "^2.0.0-beta.35",
+    "@tiptap/starter-kit": "^2.0.0-beta.113",
+    "@tiptap/vue-3": "^2.0.0-beta.65",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "firebase": "^9.5.0",
+    "remixicon": "^2.5.0",
+    "uuid": "^8.3.2",
+    "vue": "^3.0.0",
+    "vue-moment-v3": "^4.1.0",
+    "vue-papa-parse": "^3.0.3",
+    "vue-router": "^4.0.0-0",
+    "vue-uuid": "^2.0.2",
+    "vue3-print-nb": "^0.1.4",
+    "vue3-toastify": "^0.1.11"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
     "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.13",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0"
+    "@vue/compiler-sfc": "^3.0.0",
+    "node-sass": "^6.0.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.43.5",
+    "sass-loader": "^10.2.0",
+    "webpack": "^4.0.0"
   }
 }

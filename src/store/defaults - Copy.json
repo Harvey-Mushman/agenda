@@ -1,0 +1,1003 @@
+{
+    "ncDescription":
+        {
+            "ncName":"",
+            "ncWebsite":"",
+            "ncEmailAddr":"",
+            "ncLogo":"",
+            "ncContact":"",
+            "ncPostalAddr":""
+        }
+    ,
+    "templateFormats": [
+        {
+            "itemIndex": "0",
+            "itemFmt": 1,
+            "itemFmtName": "Introduction Heading",
+            "guid": "",
+            "maxCt": 1,
+            "dependsOn": [],
+            "title": "Introduction and Rules",
+            "time": "0",
+            "timeStart": "",
+            "timeEnd": "",
+            "duration": "",
+            "itemData": {
+                "init": "",
+                "paragraph": "<p><b>PUBLIC INPUT AT NEIGHBORHOOD COUNCIL MEETINGS</b></p>\n\nThe public is requested to dial *9 on their phone if calling in or press the Raise Hand button if attending by ZOOM when prompted by the presiding officer, to address the Board on any agenda item before the Board takes an action on an item. Comments from the public on agenda items will be heard only when the respective item is being considered. Comments from the public on other matters not appearing on the agenda that are within the Board’s jurisdiction will be heard during the General Public Comment period. Please note that under the Brown Act, the Board is prevented from acting on a matter that you bring to its attention during the General Public Comment period; however, the issue raised by a member of the public may become the subject of a future Board meeting. Public comment is limited to 30 seconds per speaker, unless adjusted by the presiding officer of the Board.<br /><h3 class=\"subHeading3\">Virtual Board Meeting Rules.</h3><ul class=\"indentSubList\"><li>Raise your hand (or when accessing by telephone, press *9) if you have a public comment only WHEN we get to that specific item.</li><li>After you speak, please lower your hand.</li><li>All panelists (board members) and attendees (public) will be muted until the administrator unmutes you for comment.</li><li>Board members will get one chance to speak for a max of 2 minutes per item.</li><li>Public comment will be limited to one comment for 30 seconds per item.</li><li>Please do not raise your hand more then once per item.</li><li>Raise your hand at the start of the items you want to speak on. We will then close public comment and announce the last person to speak a few minutes after the start of the item.</li><li>No ceding your time to others will be allowed.</li><li>The meeting is being video and audio recorded.</li><li>The public will be able to listen and speak but their video will be disabled.</li></ul><br /><br />All presenters that have items to project are to send them to Secretary@VeniceNC.org and President@VeniceNC.org to have them shared with the meeting. Keep a copy of them on yourdesktop as a backup.<br /><br />California State law (54953) allows Zoom type meetings with the following requirements, majority of board members must be within the NC boundaries, the stakeholders are advised how to attend and that any vote be by roll call."
+            }
+        },
+        {
+            "itemIndex": "0",
+            "itemFmt": 2,
+            "itemFmtName": "Call To Order",
+            "guid": "",
+            "maxCt": 1,
+            "dependsOn": [],
+            "title": "Call To Order",
+            "time": "0",
+            "timeStart": "",
+            "timeEnd": "",
+            "duration": "",
+            "itemData": {
+                "init": ""
+            }
+        },
+        {
+            "itemIndex": "0",
+            "itemFmt": 3,
+            "itemFmtName": "Roll Call",
+            "guid": "",
+            "maxCt": 1,
+            "dependsOn": [],
+            "title": "Roll Call",
+            "time": "",
+            "timeStart": "",
+            "timeEnd": "",
+            "duration": "3",
+            "itemData": {
+                "init": "for(var i=0; i< this.oMembers.length; i++){this.oItem.itemData.members.push( this.oMembers[i]) }",
+                "members": []
+            }
+        },
+        {
+            "itemIndex": 0,
+            "itemFmt": 4,
+            "itemFmtName": "Section Heading",
+            "guid": "",
+            "maxCt": 0,
+            "dependsOn": [],
+            "title": "",
+            "time": 0,
+            "timeStart": "",
+            "timeEnd": "",
+            "duration": "",
+            "itemData": {
+                "init": ""
+            }
+        },
+        {
+            "itemIndex": 0,
+            "itemFmt": 5,
+            "itemFmtName": "Title/Description",
+            "guid": "",
+            "maxCt": 0,
+            "dependsOn": [],
+            "title": "",
+            "time": 0,
+            "timeStart": "",
+            "timeEnd": "",
+            "duration": "",
+            "itemData": {
+                "init": "",
+                "paragraph": ""
+            }
+        },
+        {
+            "itemIndex": 0,
+            "itemFmt": 6,
+            "itemFmtName": "Title/Discussion/Motion",
+            "guid": "",
+            "maxCt": 0,
+            "dependsOn": [
+                2,
+                3
+            ],
+            "title": "",
+            "time": 0,
+            "timeStart": "",
+            "timeEnd": "",
+            "duration": "",
+            "itemData": {
+                "init": "for(var i=0; i< this.oAgenda.members.length; i++){this.oItem.itemData.motion[0].members.push( {'id': this.oAgenda.members[i].id, 'firstName':this.oAgenda.members[i].firstName, 'lastName':this.oAgenda.members[i].lastName, 'eligible':null,'voted':null} ) }",
+                "paragraph": "",
+                "supportDocs": [],
+                "distribution": [
+                    "Secratary@VeniceNC.org"
+                ],
+                "email": "",
+                "phone": "",
+                "scheduleDeadline": "",
+                "scheduleIndicator": "",
+                "callForVote": "",
+                "motionCt": 0,
+                "motion": [
+                    {
+                        "idx": 0,
+                        "body": "",
+                        "maker": "",
+                        "second": "",
+                        "members": []
+                    }
+                ]
+            }
+        },
+        {
+            "itemIndex": 0,
+            "itemFmt": 7,
+            "itemFmtName": "LUPC Case/Motion",
+            "guid": "",
+            "maxCt": 0,
+            "dependsOn": [
+                2,
+                3
+            ],
+            "title": "",
+            "time": 0,
+            "timeStart": "",
+            "timeEnd": "",
+            "duration": "",
+            "itemData": {
+                "projectAddress": "",
+                "description": "",
+                "lupcReportURL": "",
+                "applicantName": "",
+                "representative": "",
+                "applicantPhone": "",
+                "applicantEmail": "",
+                "HearingDate": "",
+                "appliactionDate": "",
+                "cityPlanner": "",
+                "lupcMember": "",
+                "lupcHearing": "",
+                "lupcVote": "",
+                "caseNumbers": "",
+                "vncSubarea": "",
+                "init": "for(var i=0; i< this.oAgenda.members.length; i++){this.oItem.itemData.motion[0].members.push( {'id': this.oAgenda.members[i].id, 'firstName':this.oAgenda.members[i].firstName, 'lastName':this.oAgenda.members[i].lastName, 'eligible':null,'voted':null} ) }",
+                "paragraph": "discussion of item project",
+                "supportDocs": [],
+                "distribution": [
+                    "Secratary@VeniceNC.org"
+                ],
+                "email": "",
+                "phone": "",
+                "scheduleDeadline": "",
+                "scheduleIndicator": "",
+                "callForVote": "",
+                "motionCt": 0,
+                "motion": [
+                    {
+                        "idx": 0,
+                        "body": "",
+                        "maker": "",
+                        "second": "",
+                        "members": []
+                    }
+                ]
+            }
+        },
+        {
+            "itemIndex": 0,
+            "itemFmt": 8,
+            "itemFmtName": "Closing Footer",
+            "guid": "",
+            "maxCt": 1,
+            "dependsOn": [],
+            "title": "Adjournment",
+            "time": 0,
+            "timeStart": "",
+            "timeEnd": "",
+            "duration": "",
+            "itemData": {
+                "init": "",
+                "paragraph": "here is where the footer text is placed into a paragraph.  This might include text about code of conduct or rules about public comment."
+            }
+        }
+    ],
+    "agenda": {
+        "isAgenda": true,
+        "body": "Board of Officers",
+        "updated": "getDate()",
+        "scheduled": "1953-04-20T16:20:00-08:00",
+        "adjourned": "",
+        "callToOrder": "",
+        "location": "Location: Webinar...instructions and link Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "title": "Regular Meeting",
+        "members": [],
+        "joint": [],
+        "inAttendance": 0,
+        "agendaItems": []
+    },
+    "ncCommittees": [
+        {
+            "id": 11,
+            "name": "AdCom/Board Draft",
+            "shortName": "AdComBoardDraft",
+            "members": [
+                1,
+                3,
+                4,
+                9,
+                12,
+                13,
+                15
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Administrative Committee",
+            "shortName": "AdCom",
+            "members": [
+                1,
+                3,
+                4,
+                9,
+                12,
+                13,
+                15
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Arts Committee",
+            "shortName": "VAC",
+            "members": [
+                7
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Board of Officers",
+            "shortName": "Board",
+            "members": [
+                1,
+                3,
+                4,
+                7,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                20,
+                21,
+                32,
+                59
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Budget & Finance Committee",
+            "shortName": "BFC",
+            "members": [
+                4,
+                1,
+                34,
+                56
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Community Resiliency Committee",
+            "shortName": "CRC",
+            "members": [
+                1,
+                22,
+                23
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Land Use and Planning Committee",
+            "shortName": "LUPC",
+            "members": [
+                28,
+                30,
+                27,
+                33,
+                26,
+                29,
+                31,
+                32,
+                58
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Neighborhoods Committee",
+            "shortName": "Neighborhoods",
+            "members": [
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Ocean Front Walk Committee",
+            "shortName": "OFW",
+            "members": [
+                10,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Outreach Committee",
+            "shortName": "OC",
+            "members": [
+                42,
+                43,
+                35,
+                38,
+                44
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Rules & Selections Committee",
+            "shortName": "RSC",
+            "members": [
+                1,
+                45,
+                17,
+                46,
+                34
+            ]
+        }
+    ],
+    "ncMembers": [
+        {
+            "id": 25,
+            "firstName": "Albert",
+            "lastName": "Einstein",
+            "roll": "At-Large",
+            "ethics": "07-19-23",
+            "funding": "07-19-23",
+            "conduct": "07-19-23",
+            "eligible": false
+        },
+        {
+            "id": 13,
+            "firstName": "Alley",
+            "lastName": "Bean",
+            "roll": "At-Large",
+            "ethics": "07-20-23",
+            "funding": "08-08-23",
+            "conduct": "07-20-23",
+            "eligible": false
+        },
+        {
+            "id": 27,
+            "firstName": "Andrew",
+            "lastName": "Mika",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 42,
+            "firstName": "Angela ",
+            "lastName": "McGregor",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 30,
+            "firstName": "Barry",
+            "lastName": "Cassilly",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 35,
+            "firstName": "Brian",
+            "lastName": "Averill",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 22,
+            "firstName": "Bruce",
+            "lastName": "Wane",
+            "roll": "At-Large",
+            "ethics": "07-19-23",
+            "funding": "07-19-23",
+            "conduct": "07-19-23",
+            "eligible": false
+        },
+        {
+            "id": 7,
+            "firstName": "Bruno",
+            "lastName": "Hernandez",
+            "roll": "Community Interest",
+            "ethics": "07-20-23",
+            "funding": "07-16-23",
+            "conduct": "07-16-23",
+            "eligible": false
+        },
+        {
+            "id": 48,
+            "firstName": "Cassie ",
+            "lastName": "Hermiston-Boyd",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 14,
+            "firstName": "Chie",
+            "lastName": "Lunn",
+            "roll": "At-Large",
+            "ethics": "07-20-23",
+            "funding": "07-09-23",
+            "conduct": "07-09-23",
+            "eligible": false
+        },
+        {
+            "id": 31,
+            "firstName": "Chris",
+            "lastName": "Plourde",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 44,
+            "firstName": "Christopher ",
+            "lastName": "Lee",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 50,
+            "firstName": "Chuck",
+            "lastName": "Rosin",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 17,
+            "firstName": "CJ",
+            "lastName": "Cole",
+            "roll": "At-Large",
+            "ethics": "07-02-23",
+            "funding": "07-01-23",
+            "conduct": "06-15-23",
+            "eligible": false
+        },
+        {
+            "id": 21,
+            "firstName": "Clark",
+            "lastName": "Brown",
+            "roll": "At-Large",
+            "ethics": "07-19-23",
+            "funding": "07-19-23",
+            "conduct": "07-19-23",
+            "eligible": false
+        },
+        {
+            "id": 23,
+            "firstName": "Clark",
+            "lastName": "Kent",
+            "roll": "At-Large",
+            "ethics": "07-19-23",
+            "funding": "07-19-23",
+            "conduct": "07-19-23",
+            "eligible": false
+        },
+        {
+            "id": 28,
+            "firstName": "Corrine",
+            "lastName": "Baginski",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 43,
+            "firstName": "Cristina ",
+            "lastName": "Rodriguez-Greenberg",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 53,
+            "firstName": "Darryl ",
+            "lastName": "Dufay",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 46,
+            "firstName": "Elizabeth ",
+            "lastName": "Wright",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 55,
+            "firstName": "Felicia",
+            "lastName": "Salzbart",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 45,
+            "firstName": "George",
+            "lastName": "Francisco",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 56,
+            "firstName": "Helen",
+            "lastName": "Fallon",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 34,
+            "firstName": "Ivan",
+            "lastName": "Spiegel ",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 1,
+            "firstName": "James",
+            "lastName": "Murez",
+            "roll": "President",
+            "ethics": "12-30-22",
+            "funding": "12-30-22",
+            "conduct": "12-30-22",
+            "eligible": false
+        },
+        {
+            "id": 10,
+            "firstName": "James",
+            "lastName": "Robb",
+            "roll": "At-Large",
+            "ethics": "07-18-23",
+            "funding": "07-17-23",
+            "conduct": "06-15-23",
+            "eligible": false
+        },
+        {
+            "id": 12,
+            "firstName": "Jason",
+            "lastName": "Sugars",
+            "roll": "At-Large",
+            "ethics": "07-19-23",
+            "funding": "07-20-23",
+            "conduct": "07-19-23",
+            "eligible": false
+        },
+        {
+            "id": 39,
+            "firstName": "Jason",
+            "lastName": "Tong",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 4,
+            "firstName": "Jay",
+            "lastName": "Handal",
+            "roll": "Treasurer",
+            "ethics": "08-03-23",
+            "funding": "06-21-23",
+            "conduct": "07-20-23",
+            "eligible": false
+        },
+        {
+            "id": 58,
+            "firstName": "Jeff",
+            "lastName": "Martin",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 49,
+            "firstName": "Jeremy",
+            "lastName": "Loeb",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 33,
+            "firstName": "Lauren",
+            "lastName": "Siegel",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 37,
+            "firstName": "Mark",
+            "lastName": "Rago",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 26,
+            "firstName": "Matthew",
+            "lastName": "Royce",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 29,
+            "firstName": "Mehrnoosh",
+            "lastName": "Mojallali",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 3,
+            "firstName": "Melissa",
+            "lastName": "Diner",
+            "roll": "Secretary",
+            "ethics": "05-22-22",
+            "funding": "",
+            "conduct": "07-19-23",
+            "eligible": false
+        },
+        {
+            "id": 32,
+            "firstName": "Michael",
+            "lastName": "Jensen",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 15,
+            "firstName": "Mike",
+            "lastName": "Bravo",
+            "roll": "At-Large",
+            "ethics": "",
+            "funding": "07-20-23",
+            "conduct": "07-20-23",
+            "eligible": false
+        },
+        {
+            "id": 38,
+            "firstName": "Nick",
+            "lastName": "Antonicello",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 9,
+            "firstName": "Nico",
+            "lastName": "Ruderman",
+            "roll": "At-Large",
+            "ethics": "07-20-23",
+            "funding": "07-19-23",
+            "conduct": "07-20-23",
+            "eligible": false
+        },
+        {
+            "id": 40,
+            "firstName": "Noel",
+            "lastName": "Johnston",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 59,
+            "firstName": "Patrick",
+            "lastName": "McKinley",
+            "roll": "At-Large",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 41,
+            "firstName": "Pete",
+            "lastName": "Ruiz",
+            "roll": "Committee Member",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 51,
+            "firstName": "Reta ",
+            "lastName": "Moser",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 20,
+            "firstName": "Robert",
+            "lastName": "Thibodeau",
+            "roll": "At-Large",
+            "ethics": "06-17-22",
+            "funding": "09-28-22",
+            "conduct": "06-16-22",
+            "eligible": false
+        },
+        {
+            "id": 36,
+            "firstName": "Robin",
+            "lastName": "Rudisill",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 54,
+            "firstName": "Sergio ",
+            "lastName": "Perez",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 16,
+            "firstName": "Soledad",
+            "lastName": "Ursua",
+            "roll": "At-Large",
+            "ethics": "05-22-22",
+            "funding": "06-10-22",
+            "conduct": "06-10-22",
+            "eligible": false
+        },
+        {
+            "id": 24,
+            "firstName": "Tony",
+            "lastName": "Stark",
+            "roll": "At-Large",
+            "ethics": "07-19-23",
+            "funding": "07-19-23",
+            "conduct": "07-19-23",
+            "eligible": false
+        },
+        {
+            "id": 47,
+            "firstName": "William",
+            "lastName": "Wood",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        },
+        {
+            "id": 52,
+            "firstName": "Yolanda ",
+            "lastName": "Gonzalez",
+            "roll": "",
+            "ethics": "",
+            "funding": "",
+            "conduct": "",
+            "eligible": false
+        }
+    ],
+    "ncSubAreas": [
+        {
+            "name": "Ballona Lagoon West Bank"
+        },
+        {
+            "name": "Ballona Lagoon, Grand Canal East Bank"
+        },
+        {
+            "name": "Silver Strand"
+        },
+        {
+            "name": "Marina Peninsula"
+        },
+        {
+            "name": "Venice Canals"
+        },
+        {
+            "name": "North Venice"
+        },
+        {
+            "name": "Oakwood-Milwood-Southeast Venice"
+        },
+        {
+            "name": "Oxford Triangle"
+        }
+    ],
+    "meetingTypes": [
+        {
+            "id": 0,
+            "name": "Regular Meeting"
+        },
+        {
+            "id": 1,
+            "name": "Presentation Meeting"
+        },
+        {
+            "id": 2,
+            "name": "Special Meeting (24 Hour Notice)"
+        }
+    ],
+    "twcCommittees": [
+        {
+            "committee": "Sample",
+            "id": "295"
+        },
+        {
+            "committee": "VNC General Board",
+            "id": "84"
+        },
+        {
+            "committee": "Administrative",
+            "id": "83"
+        },
+        {
+            "committee": "Budget & Finance",
+            "id": "85"
+        },
+        {
+            "committee": "Community Resiliency",
+            "id": "94"
+        },
+        {
+            "committee": "Dog Park",
+            "id": "99"
+        },
+        {
+            "committee": "Elections 2021",
+            "id": "97"
+        },
+        {
+            "committee": "Land Use & Planning",
+            "id": "81"
+        },
+        {
+            "committee": "Homelessness",
+            "id": "86"
+        },
+        {
+            "committee": "Neighborhood",
+            "id": "78"
+        },
+        {
+            "committee": "Ocean Front Walk",
+            "id": "80"
+        },
+        {
+            "committee": "Outreach & Event Planning",
+            "id": "79"
+        },
+        {
+            "committee": "Parking and Transportation",
+            "id": "87"
+        },
+        {
+            "committee": "Public Health &amp; Safety",
+            "id": "88"
+        },
+        {
+            "committee": "Rules & Selections",
+            "id": "82"
+        },
+        {
+            "committee": "Venice Arbor",
+            "id": "82"
+        },
+        {
+            "committee": "Arts",
+            "id": "90"
+        },
+        {
+            "committee": "Discussion Forum",
+            "id": "77"
+        }
+    ],
+    "setFocus": "",
+    "inAttendance": 0,
+    "isQuorum": ""
+}

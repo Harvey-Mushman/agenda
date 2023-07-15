@@ -1,0 +1,612 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    padding: 10px .5in 10px .5in;;
+    display:flex;
+    justify-content: space-between;
+    max-width: 8.5in;
+    background-color:lightgray;
+    border: black solid 1px;
+}
+.navBar{
+    display:flex;
+	flex-direction: column;
+    align-items: center;
+    width:100vw;
+    background-color:lightgray;
+}
+.btnNav{
+
+    width:50px !important;
+    margin: 0 5px 0 5px;
+    font-weight:bold;
+    cursor:pointer;
+    color:white;
+}
+.btn{
+    /* height:20px !important; */
+    /* width:70px !important; */
+    height:25px !important;
+    margin: 0 5px 0 5px;
+    padding:0 5px 0 5px;
+    font-weight:bold;
+    cursor:pointer;
+    color:white;
+}
+.btnAdd{
+    color:white;
+    background-color:blue;
+    margin: 0 5px 0 5px;
+    font-weight:bold;
+}
+.btnEdit{
+    background-color:gold;
+    color:green;
+}
+.btnLoad{
+    background-color:green;
+}
+.voterInnerContainer{
+    margin:5px 0 5px 0;
+}
+.maker{
+    font-size:14px;
+}
+.btnCallVote{
+    width:130px !important;
+}
+.btnRefreshVoters{
+    background-color:rgba(1, 102, 1, 0.5);
+    width:120px !important;
+}
+.btnFileLoad{
+    display:none;
+}
+.btnImport{
+    width:100px !important;
+    background-color:orange;
+}
+.btnExtract{
+    width:100px !important;
+    background-color:yellowgreen;
+}
+.btnSort{
+    background-color:rgb(212, 0, 255);
+}
+.btnRenumber{
+    background-color:rgb(212, 0, 255);
+    width:90px !important;
+}
+.btnSave{
+    background-color:red;
+}
+.btnHome{
+    justify-self: flex-end;
+    background-color:rgb(0, 102, 255);
+}
+.btnPrint{
+    justify-self: flex-end;
+    background-color:blue;
+}
+/* .btnDelItem{
+    display:inline-block;
+    border:none;
+    background-color:inherit;
+    height:29px;
+    width:26px;
+    margin-left:3px;
+}
+.btnDelItem:hover{
+    border:solid 1px red;
+}
+.btnDelItem img{
+    filter: invert(0%) sepia(1%) saturate(7492%) hue-rotate(315deg) brightness(106%) contrast(97%);
+    cursor:pointer;
+}
+.btnDelItem img:hover{
+    filter: invert(22%) sepia(98%) saturate(5980%) hue-rotate(356deg) brightness(100%) contrast(117%);
+    cursor:pointer;
+} */
+.btnCopyMotion{
+    background-color:lightBlue;
+    margin-left: 20px;;
+}
+.btnDelete{
+    width:70px;
+    background-color:red;
+    color:white;
+}
+.btnDelete:hover{
+    background-color:rgb(131, 1, 55)
+}
+.btnCancel{
+    background-color:rgb(39, 133, 2);
+    color:white;
+}
+.btnLg120{
+	width:120px !important;
+}
+.chkShowAll{
+    display:block;
+    height:20px;
+    margin:0 3px 0 5px;
+}
+.pageBackground{
+    margin:0px;
+    padding:.5in;
+    background-color: azure;
+    max-width:8.5in;
+    width:8.5in;
+    /* max-height:11in;
+    height:11in; */
+    border:black solid 1px;
+}
+.committeeHeading{
+    display:flex;
+    justify-content: center;
+    height: 1.7em;
+}
+.committeeHeadingJoint{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.committeeHeadingJoint ul{
+    list-style-type: none;
+}
+.committeeLocation{
+    margin:2em 10em 2em 10em;
+}
+.instructions{
+    margin:2em 10em 2em 10em;
+}
+.formatCbo{
+    -webkit-appearance: menulist-button;
+    height:1.6em;
+    font-size:12pt;
+}
+input{
+    border: 1px #eeeeee solid;
+    background: none;
+    cursor:pointer;
+}
+textarea{
+    border: 1px #eeeeee solid;
+    background: none;
+    cursor:pointer;
+    resize:none;
+    height:20px;
+    width: 100%;
+    /* margin-left: 3em; */
+}
+label{
+    font-weight: bold;
+}
+.item{
+    margin:1em 0 1em 0;
+    border:black solid 1px;
+    border-radius: 5px;
+    background-color:rgb(232, 232, 233);
+    padding:10px 5px 10px 0;
+}
+.altMotion{
+    background-color:rgb(202, 202, 202);
+}
+.itemFmt{
+    display:block;
+}
+.itemNo{
+    width: 25px;
+    text-align: right;
+    font-size:12pt;
+    font-weight:bold !important;
+	margin-right:5px;
+    /* padding-top:2px; */
+}
+.itemRow{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+}
+.itemTitle{
+    font-weight:bold;
+    font-size:12pt;
+    display:flex;
+    flex-grow:3;
+    /* align-items: flex-end; */
+    align-items: inherit;
+    margin:0 5px 0 5px;
+}
+.itemTitleText{
+    font-weight:bold;
+    font-size:12pt;
+    display:flex;
+    flex-grow:3;
+    margin:0 5px 0 5px;
+    background-color:white;
+}
+.itemTime{
+    width:1.5em;
+    margin:0;
+    background-color:white;
+}
+.itemTimeDiv{
+    display:flex;
+    align-items: center;
+    margin-left:.5em;
+}
+.itemDescriptionContainer{
+    width:100%;
+    height:auto;
+}
+.itemDescription{
+    /* width:100%; */
+    flex:1;
+    margin:5px 0 5px 35px;
+    padding-right:50px;
+}
+.itemRowDeatils{
+    display: flex;
+    margin: 5px 50px 5px 10px;
+    /* align-items: center; */
+}
+.columns3{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    column-count: 3;
+
+}
+/* .editorAdjustment{
+    margin-top:1em;
+} */
+.riFile{
+    height:20px;
+    width:20px;
+    color:black;
+    cursor:pointer;
+}
+.riFile:hover{
+    background-color:rgb(172, 151, 151);
+}
+.riControls{
+    display:flex;
+    justify-content: flex-end;
+}
+.content{
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+}
+.content label{
+    margin-left:50px;
+    /* font-size:smaller; */
+    font-weight: bold;
+}
+.editorContainer{
+    width:80%;
+    margin-left:5px;
+}
+.paragraph{
+    width: auto;
+    margin: 5px 50px 10px 50px;
+    background-color:white;
+}
+.ncLogo, .vncLogo, .cityLogo{
+    max-width:.75in;
+    width:.75in;
+    padding:0 15px 0 15px;
+}
+.pageLogo{
+    display:flex;
+    justify-content: center;
+}
+/* .vncLogo, .cityLogo{
+    max-width:.75in;
+    width:.75in;
+    padding:0 15px 0 15px;
+} */
+.logoText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divRollCall{
+    display:flex;
+    justify-content: flex-start;
+    height:18em;
+}
+.rollCall{
+    transform: rotate(-90deg);
+    /* width: 15rem;
+    margin-bottom:3em;
+    border: 1px solid black; */
+}
+.rollCall ol{
+    margin:0;
+    padding: 2px 5px 2px 5px;
+}
+.rollCall li{
+    list-style-type: none;
+    padding: 1px 0 9px 0;
+}
+.rollCall select{
+    margin:0 10px 3px 0;
+    font-size:1.2em;
+}
+.rollCall .member{
+    background-color:pink;
+}
+
+.rollCallFocus  {
+    /* some sweet CSS */
+    background-color:green;
+}
+
+.tally{
+    /* background-color:lightskyblue; */
+    display:flex;
+    justify-content: flex-end;
+}
+.tally span{
+    border:1px solid gray;
+    padding:1px 3px 1px 3px;
+}
+.member:disabled{
+text-decoration: line-through;
+}
+
+.divAttendence{
+    display:flex;
+    justify-content: flex-start;
+    /* height:15em; */
+}
+.divAttendenceImportant{
+    display:flex !important;
+}
+.attendence{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* height: 250px; */
+
+ }
+.attendence ol{
+    margin:0;
+    padding: 2px 5px 2px 5px;
+}
+.attendence li{
+    display:flex !important;
+    list-style-type: none;
+    padding: 1px 0 9px 0;
+    background: lightgray;
+    width:250px;
+    height: 18px;
+    margin: 5px;
+}
+.attendence li input[type=checkbox]{
+    /* margin-right:10px; */
+    transform: scale(1.5);
+    margin: 5px 10px 5px 5px;
+}
+.attendence .member{
+margin-top:5px;
+}
+.attendence .rollCallChkBox{
+    margin-top:3px;
+}
+.rollCallChkBox i{
+    font-size:20px;
+    margin-right:3px;
+}
+.castVote{
+    margin:2px 5px 2px 5px;
+    width:35px;
+    height:20px;
+}
+.castVoteIsPrint{
+    margin:5px 5px 2px 5px;
+    width:10px;
+    height:20px;
+}
+.castVote:focus{
+    width:auto;
+}
+.yea{
+    font-weight: bold;
+}
+.nay{
+    font-weight: bold;
+}
+.abstain{
+    font-weight: bold;
+}
+.recuse{
+    font-weight: bold;
+}
+.ineligible{
+    font-weight: bold;
+}
+.endTime{
+    font-weight:bold;
+    margin-right:10px;
+}
+.timeEnded{
+    margin-right:5px;
+}
+/* .divAttendence{
+    display:flex;
+    justify-content: flex-start;
+    height:15em;
+}
+.attendence{
+    transform: rotate(-90deg);
+    margin: auto 0 auto 0;
+    transform-origin: left top;
+    margin: 260px 90px 260px 90px;
+ }
+.attendence ol{
+    margin:0;
+    padding: 2px 5px 2px 5px;
+}
+.attendence li{
+    list-style-type: none;
+    padding: 1px 0 9px 0;
+}
+.attendence li input[type=checkbox]{
+    margin-right:10px;
+    transform: scale(1.5);
+} */
+.saveRoll{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto 0 auto;
+    padding:1em 2em 1em 2em;
+    width: 50%;
+    border-radius: 5px;
+    font-weight:bold;
+    background-color:gray;
+}
+.indentSubList{
+    margin:0 20px 0 20px;
+}
+.subHeading3{
+    font-size:14px;
+}
+.motionDiv{
+    /* margin:5px 50px 10px 50px; */
+}
+.motionDiv label{
+    font-size:18px;
+}
+.motionHeading{
+    font-weight:bold;
+}
+.altMotionHeading{
+    font-weight:bold;
+    margin-left:50px;
+}
+.motionText{
+    background-color:white;
+    width: auto;
+    margin: 5px 50px 10px 50px;
+}
+.itemChildLabel{
+    font-weight:bold;
+    width:150px;
+    text-align: right;
+}
+.itemChildInput{
+    font-weight: normal;
+    flex-grow:3;
+    background-color:white;
+    margin:0;
+
+}
+.itemRowDeatils li{
+    display:flex;
+    list-style:none;
+    margin-bottom:5px;
+}
+.itemRowDeatils ul{
+    flex-grow:3;
+    padding-left:5px;
+    margin: 0 0 10px 2px;;
+}
+.itemChildInputUrlTitle{
+    padding-right: 0;
+    border-right: 0;
+}
+.titleUrl{
+    display:flex;
+}
+.titleUrlLeft{
+    justify-content: flex-end;
+}
+.titleUrlLeft :focus{
+    text-align:left;
+}
+.titleUrlLeft :not(:focus){
+    text-align:right
+}
+.titleUrlCenter{
+    flex: 0 0 1ch;
+    display: flex;
+}
+
+.voterContainer{
+    margin-left:10px;
+}
+.alternateMotion{
+    display:block;
+    margin-left:10px;
+}
+.GoToTop{
+    position: static;
+}
+.arrowUp{
+    height:40px;
+    width:40px;
+}
+.editMenu{
+    display:none;
+}
+/* required for printing */
+/* css scoped to printArea class */
+.printArea{
+	background: none !important;
+	width:8.5in;
+}
+/* individual subclasses start here */
+.printArea .pageBackground{
+	background:none;
+	border:none;
+}
+.printArea .item{background:none !important}
+
+.printArea input{
+	border:none !important;
+}
+.printArea textarea{
+	border:none;
+}
+
+.printArea .timeClock{
+  display:none;
+}
+.printArea .btnDelItem{
+	display:none !important;
+	background:none;
+}
+.printArea .chkShowAll{
+	display:none;
+}
+.printArea .item{
+	border:rgb(200, 200, 200) solid 1px;
+	background:none;
+}
+.printArea .motion{
+	font-size:18px !important;
+}
+/* .printArea .voterContainer{
+	display:none !important;
+} */
+ .printArea .alternateMotion{
+ 	/* display:none !important; */
+    background:none;
+}
+.printArea .btnSaveMinutes{
+	display:none;
+}
+.councilContainer{
+    max-width:800px;
+}
