@@ -55,6 +55,7 @@ firebase server by issuing the firebase deploy --only hosting
 
 
 Project Console: https://console.firebase.google.com/project/meeting-manager-2a57a/overview
+
 Hosting URL: https://meeting-manager-2a57a.web.app
 
 other commands
